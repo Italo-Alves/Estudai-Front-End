@@ -1,0 +1,62 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Italo Alves",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@popperjs/core": "^2.4.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^14.6.0",
+    "@types/react": "^16.9.48",
+    "@types/react-fontawesome": "^1.6.4",
+    "@types/react-router-dom": "^5.1.5",
+    "axios": "^0.21.0",
+    "concurrently": "^5.3.0",
+    "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery-ui": "^1.12.1",
+    "jquery-validation": "^1.19.2",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-slick": "^0.27.12",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^10.9.0",
+    "typescript": "^4.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"react-scripts start\" \"cd.. && cd back-end && yarn start\""
+  },
+  "styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.4",
+    "@types/react-dom": "^16.9.8",
+    "bootstrap": "^4.5.2"
+  }
+}

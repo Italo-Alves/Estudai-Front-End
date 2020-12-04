@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E55454;fill-opacity:0;}
+	.st1{opacity:0.5;fill:#DAF3B2;enable-background:new    ;}
+	.st2{fill:none;stroke:#548E54;stroke-width:3.6;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#548E54;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:#548E54;}
+	.st5{font-family:'OpenSans-Bold';}
+	.st6{font-size:19px;}
+	.st7{font-size:18px;}
+</style>
+<g id="Group_188" transform="translate(-459 -1056)">
+	<path id="Rectangle_39" class="st0" d="M459,1056h170v170H459V1056z"/>
+	<g id="Group_146">
+		<path id="Path_59" class="st1" d="M596.4,1114.6c-1.6,11.2-12.4,21.8-29.5,33.4s-26,64.8-51.6,50.5
+			c-25.6-14.3-36.3-91.7,19.9-108.3C591.3,1073.7,598,1103.4,596.4,1114.6z"/>
+		<g id="Group_71" transform="translate(2 6)">
+			<g id="Group_70" transform="translate(0 -15.693)">
+				<path id="Union_3" class="st2" d="M517.5,1178H484c-2.3,0-4.2-1.9-4.2-4.2l0,0V1124c0-2.3,1.9-4.2,4.2-4.2l0,0h94.8
+					c2.3,0,4.2,1.9,4.2,4.2v49.8c0,2.3-1.9,4.2-4.2,4.2h-52l-9.3,12.5V1178z"/>
+				<g id="Group_69" transform="translate(491.755 1135.791)">
+					<path id="Path_75" class="st3" d="M17.1,12.5l5.3,13.9L36,0h43.3"/>
+					<text transform="matrix(1 0 0 1 35.245 24.902)" class="st4 st5 st6">Y + Z</text>
+					<text transform="matrix(1 0 0 1 0.245 23.902)" class="st4 st5 st7">X</text>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

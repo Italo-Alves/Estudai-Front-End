@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E55454;fill-opacity:0;}
+	.st1{opacity:0.5;fill:#D2CDD4;enable-background:new    ;}
+	.st2{fill:none;stroke:#548E54;stroke-width:3.6;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#548E54;stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:none;}
+	.st5{fill:none;stroke:#548E54;stroke-width:3.6;}
+	.st6{fill:none;stroke:#548E54;stroke-width:3.6;stroke-linecap:round;}
+</style>
+<g id="Group_189" transform="translate(-643 -1056)">
+	<path id="Rectangle_40" class="st0" d="M643,1056h170v170H643V1056z"/>
+	<g id="Group_147">
+		<path id="Path_59" class="st1" d="M760.6,1190.4c-10.7-0.2-23.3-9.1-38.5-23.9s-66.2-16.8-60.2-42.8s73.5-45.6,104.1,5.6
+			S771.3,1190.6,760.6,1190.4z"/>
+		<g id="Group_72" transform="translate(208 4)">
+			<g id="Group_75" transform="translate(-9 -1)">
+				<g id="Group_70" transform="translate(10 -23.693)">
+					<path id="Union_3" class="st2" d="M509.5,1178H484c-2.3,0-4.2-1.9-4.2-4.2l0,0V1124c0-2.3,1.9-4.2,4.2-4.2l0,0h73.8
+						c2.3,0,4.2,1.9,4.2,4.2v49.8c0,2.3-1.9,4.2-4.2,4.2h-39l-9.3,12.5V1178z"/>
+					<g id="Group_69" transform="translate(493.77 1145.693)">
+						<path id="Path_75" class="st3" d="M0,0h38.6"/>
+					</g>
+					<g id="Group_73" transform="translate(493.77 1155.693)">
+						<path id="Path_75-2" class="st3" d="M0,0h32.1"/>
+					</g>
+					<g id="Group_74" transform="translate(493.77 1164.693)">
+						<path id="Path_75-3" class="st3" d="M0,0h16.1"/>
+					</g>
+				</g>
+				<g id="Ellipse_8" transform="translate(552 1102)">
+					<circle class="st4" cx="6.5" cy="6.5" r="6.5"/>
+					<circle class="st5" cx="6.5" cy="6.5" r="4.7"/>
+				</g>
+			</g>
+			<g id="Ellipse_9" transform="translate(490 1159)">
+				<circle class="st4" cx="7" cy="7" r="7"/>
+				<circle class="st5" cx="7" cy="7" r="5.2"/>
+			</g>
+			<path id="Path_79" class="st6" d="M483.3,1190c0-7.9,4.1-14.9,14.4-14.7c1.5,0,12.8,0.1,12.8,14.7"/>
+		</g>
+	</g>
+</g>
+</svg>

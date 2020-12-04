@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <style>
+            .cls-1{fill:#dd3030;opacity:0}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_199" data-name="Group 199" transform="translate(-1620 -4505)">
+        <path id="Rectangle_48" d="M0 0h28v28H0z" class="cls-1" data-name="Rectangle 48" transform="translate(1620 4505)"/>
+        <g id="youtube" transform="translate(1623.645 4511)">
+            <path id="Subtraction_2" d="M17.983 16.049H3.086A3.09 3.09 0 0 1 0 12.963V3.086A3.09 3.09 0 0 1 3.086 0h14.9a3.09 3.09 0 0 1 3.084 3.086v9.877a3.09 3.09 0 0 1-3.087 3.086zM7.736 4.917v6.3l5.578-3.2z" class="cls-2" data-name="Subtraction 2"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E55454;fill-opacity:0;}
+	.st1{opacity:0.5;fill:#E5CEBC;enable-background:new    ;}
+	.st2{fill:none;stroke:#548E54;stroke-width:3.5;stroke-linecap:round;}
+	.st3{fill:#548E54;}
+	.st4{fill:none;stroke:#548E54;stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Group_184" transform="translate(-643 -796)">
+	<path id="Rectangle_35" class="st0" d="M643,796h170v170H643V796z"/>
+	<g id="Group_142" transform="translate(0 3.268)">
+		<path id="Path_59" class="st1" d="M747.7,832c5.3,9.5,3.4,23.9-2.7,42.9s18.3,64.6-9.4,69.1s-81-47.8-48.3-93.8
+			C719.9,804,742.3,822.5,747.7,832z"/>
+		<g id="Group_49" transform="translate(20 17)">
+			<g id="Group_43" transform="translate(31 11)">
+				<path id="Path_46" class="st2" d="M664.2,858.6h35.3"/>
+				<path id="Path_49" class="st2" d="M689.4,835.8h10.1"/>
+				<path id="Path_47" class="st2" d="M664.2,866.5H689"/>
+				<path id="Path_48" class="st2" d="M664.2,874.4h17.4"/>
+				<g id="Group_42" transform="translate(627 804.518)">
+					<path id="Rectangle_12" class="st2" d="M3,0h56.4c1.7,0,3,1.3,3,3v40.6c0,1.7-1.3,3-3,3H3c-1.7,0-3-1.3-3-3V3C0,1.3,1.3,0,3,0z
+						"/>
+					<path id="Polygon_1" class="st3" d="M35.3,22.4c0.5,0.3,0.7,0.9,0.4,1.4c-0.1,0.2-0.2,0.3-0.4,0.4l-7.6,4.1
+						c-0.5,0.3-1.1,0.1-1.4-0.4c-0.1-0.1-0.1-0.3-0.1-0.5v-8.1c0-0.6,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1L35.3,22.4z"/>
+				</g>
+				<path id="Path_55" class="st4" d="M689.4,821.3h26.1v75h-65v-44"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

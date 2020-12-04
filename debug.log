@@ -1,0 +1,5 @@
+[0827/214427.383:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0827/214427.390:ERROR:exception_snapshot_win.cc(98)] thread ID 6700 not found in process
+[0827/214427.390:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1103/143553.765:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1106/175622.525:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
