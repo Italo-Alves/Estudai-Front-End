@@ -55,7 +55,7 @@
     ]
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.4",
+    "@types/jquery": "^3.5.5",
     "@types/react-dom": "^16.9.8",
     "bootstrap": "^4.5.2"
   }
