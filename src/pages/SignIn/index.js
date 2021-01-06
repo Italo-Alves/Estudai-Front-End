@@ -5,9 +5,8 @@ import { login } from '../../services/auth';
 import api from '../../services/api';
 import { loginSucess, showError } from './script';
 
-import PageHeader from '../../components/PageHeaderBootstrap';
-import PageFooterSiteBootStrap from '../../components/FooterSiteBootstrap';
-import PageFooterSocialBootstrap from '../../components/FooterSocialBootstrap';
+import { Header } from '../../components/Header';
+import { FooterInstitucional, FooterSocial } from '../../components/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons/faAngleUp';
@@ -49,7 +48,7 @@ class SignIn extends Component {
     render() {
         return (
             <div className="scrollBar">
-                <PageHeader />
+                <Header />
                 <main className="content">
                     <button id="toTopButton" className="mr-4">
                         <i className="fas fa-angle-up"></i>
@@ -97,8 +96,8 @@ class SignIn extends Component {
                     </div>
                 </main>
                 <footer>
-                    <PageFooterSiteBootStrap />
-                    <PageFooterSocialBootstrap />
+                    <FooterInstitucional />
+                    <FooterSocial />
                 </footer>
             </div>
         )

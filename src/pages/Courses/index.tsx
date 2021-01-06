@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import { PageHeaderLogin } from '../../components/PageHeaderBootstrap';
-export default class Courses extends Component {
-    render() {
-        return (
-            <div className="content">
-                <p>Tela Cursos</p>
-                <PageHeaderLogin />
-            </div>
-        )     
-    }
-}
+import React from "react";
+import { HeaderLogin } from "../../components/Header";
+
+const Courses = () => {
+  return (
+    <div className="content">
+      <p>Tela Cursos</p>
+      <HeaderLogin />
+    </div>
+  );
+};
+
+export default Courses;

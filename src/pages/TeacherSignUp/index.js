@@ -3,9 +3,8 @@ import { withRouter } from 'react-router-dom';
 import api from '../../services/api';
 import $ from 'jquery';
 
-import PageHeader from '../../components/PageHeaderBootstrap';
-import PageFooterSiteBootStrap from '../../components/FooterSiteBootstrap';
-import PageFooterSocialBootstrap from '../../components/FooterSocialBootstrap';
+import { Header } from '../../components/Header';
+import { FooterInstitucional, FooterSocial } from '../../components/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons/faAngleUp';
@@ -41,7 +40,7 @@ class TeacherSignUp extends Component {
     }
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
     this.setState({ city: $("#city").val() });
     this.setState({ address: $("#address").val() });
@@ -49,12 +48,12 @@ class TeacherSignUp extends Component {
     this.setState({ state: $("#state").val() });
   };
 
-  handleFileChange = (e) => {
+  handleFileChange = e => {
     this.setState({ selectedFile: e.target.files[0] });
   }
 
-  handleSubmit = async (e) => {
-    e.preventDefault();  
+  handleSubmit = async e => {
+    e.preventDefault();
     console.log(this.state);
 
     this.state.documentNumber = this.state.documentNumber.replace(/[^\d]+/g,'');
@@ -89,7 +88,7 @@ class TeacherSignUp extends Component {
     if ($("#foneHome").val() === '') {
       this.state.foneHome = null;
     }
-    
+
     await api.post('/teacher', data)
     .then(res => {
         console.log(res);
@@ -107,7 +106,7 @@ class TeacherSignUp extends Component {
     const { firstName, lastName, documentNumber, birthday, zip, state, city, address, number, addressDetails, neighborhood, foneMobile, foneHome, foneCompany, email, password } = this.state
     return (
       <div className="scrollBar">
-        <PageHeader />
+        <Header />
         <main className="content">
           <button id="toTopButton" className="mr-4">
             <i className="fas fa-angle-up"></i>
@@ -262,8 +261,8 @@ class TeacherSignUp extends Component {
           </div>
         </main>
         <footer>
-          <PageFooterSiteBootStrap />
-          <PageFooterSocialBootstrap />
+          <FooterInstitucional />
+          <FooterSocial />
         </footer>
       </div>
     )

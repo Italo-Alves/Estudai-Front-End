@@ -3,9 +3,8 @@ import { withRouter } from 'react-router-dom';
 import api from '../../services/api';
 import $ from 'jquery';
 
-import PageHeader from '../../components/PageHeaderBootstrap';
-import PageFooterSiteBootStrap from '../../components/FooterSiteBootstrap';
-import PageFooterSocialBootstrap from '../../components/FooterSocialBootstrap';
+import { Header } from '../../components/Header';
+import { FooterInstitucional, FooterSocial } from '../../components/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons/faAngleUp';
@@ -79,7 +78,7 @@ class StudentSignUp extends Component {
     const { firstName, lastName, documentNumber, birthday, zip, state, city, address, number, addressDetails, neighborhood, foneMobile, foneHome, foneCompany, email, password } = this.state
     return (
       <div className="scrollBar">
-        <PageHeader />
+        <Header />
         <main className="content">
           <button id="toTopButton" className="mr-4">
             <i className="fas fa-angle-up"></i>
@@ -230,8 +229,8 @@ class StudentSignUp extends Component {
           </div>
         </main>
         <footer>
-          <PageFooterSiteBootStrap />
-          <PageFooterSocialBootstrap />
+          <FooterInstitucional />
+          <FooterSocial />
         </footer>
       </div>
     )

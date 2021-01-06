@@ -1,20 +1,20 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import Swal from 'sweetalert2';
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 50){
-      $('#toTopButton').fadeIn();
-    }else{
-      $('#toTopButton').fadeOut();
-    }
-  });
-  
-  $('#toTopButton').click(function(){
-    $('html, body').animate({scrollTop: 0}, 500);
-    return false;
-  });
-});
+// $(document).ready(function(){
+//   $(window).scroll(function(){
+//     if($(this).scrollTop() > 50){
+//       $('#toTopButton').fadeIn();
+//     }else{
+//       $('#toTopButton').fadeOut();
+//     }
+//   });
+
+//   $('#toTopButton').click(function(){
+//     $('html, body').animate({scrollTop: 0}, 500);
+//     return false;
+//   });
+// });
 
 export function showWarning(text) {
   Swal.fire({
@@ -50,7 +50,7 @@ export function loginSucess(text) {
       toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
   })
-  
+
   Toast.fire({
     icon: 'success',
     title: text

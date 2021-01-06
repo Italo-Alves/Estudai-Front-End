@@ -1,88 +1,66 @@
-body{
-    background: var(--color-background) !important;
+body {
+  background: var(--color-background) !important;
 }
 
 .content {
-    margin: 0 auto;
-    max-width: 1350px;
-    display: flex;
-    flex-direction: column;
+  margin: 0 auto;
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header {
-    border-bottom: 0.5px solid var(--color-primary);
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Archivo', sans-serif;
-    padding: 0 0 12px 0;
+  border-bottom: 0.5px solid var(--color-primary);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  padding: 0 0 12px 0;
 }
 
 .block {
-    background: #ffffff;
-    border-radius: 10px;
-    border: solid 1px var(--color-text-in-primary);
-    background-color: var(--color-box-base);
+  background: #ffffff;
+  border-radius: 10px;
+  border: solid 1px var(--color-text-in-primary);
+  background-color: var(--color-box-base);
 }
 
 .form-control {
-    border-radius: 0.50rem !important;
-    font-size: 1.6rem !important;
-    padding: 0.6rem 1.2rem !important;
+  border-radius: 0.5rem !important;
+  font-size: 1.6rem !important;
+  padding: 0.6rem 1.2rem !important;
 }
 
 #btn-cadastrar {
-   white-space: nowrap;
-   border-radius: 0.50rem !important;
-   padding: 1.2rem 1.6rem !important;
-   font-size: 1.6rem !important; 
-   border: none !important;
+  white-space: nowrap;
+  border-radius: 0.5rem !important;
+  padding: 1.2rem 1.6rem !important;
+  font-size: 1.6rem !important;
+  border: none !important;
 }
 
 .block input {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
-.block h5{
-    font-weight: 700;
-    margin-bottom: 1rem;
+.block h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.margin-custom{
-    margin-bottom: 6.6rem;
+.margin-custom {
+  margin-bottom: 6.6rem;
 }
 
 #state {
-    background-color: transparent !important;
-}
-
-#toTopButton{
-    position: fixed;
-    bottom: 60px;
-    right: 0;
-    z-index: 2000;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    border: none;
-    font-size: 18px;
-    outline: none;
-    background: #000000;
-    color: white;
-    cursor: pointer;
-    display: none;
-    transition: background-color .3s;
-}
- 
-#toTopButton:hover{
-    background-color: #404040;
+  background-color: transparent !important;
 }
 
 .required:after {
-    content: "*";
-    color: red;
+  content: "*";
+  color: red;
 }
 
-.legend{
-    margin-left: 1rem;
-    padding-left: 1rem;
+.legend {
+  margin-left: 1rem;
+  padding-left: 1rem;
 }
