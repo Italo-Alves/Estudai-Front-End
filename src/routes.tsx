@@ -8,7 +8,6 @@ import LoginTeacher from './pages/TeacherSignIn/index'
 import StudentSignUp from './pages/StudentSignUp/index'
 import TeacherSignUp from './pages/TeacherSignUp/index'
 import Courses from './pages/Courses'
-import test from './pages/test'
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -30,7 +29,6 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/teste" component={test} />
         <Route path="/auth/login" component={Login} />
         <Route path="/auth/loginTeacher" component={LoginTeacher} />
         <Route exact path="/signup/student" component={StudentSignUp} />
