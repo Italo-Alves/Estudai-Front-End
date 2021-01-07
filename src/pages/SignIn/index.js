@@ -7,9 +7,7 @@ import { loginSucess, showError } from './script';
 
 import { Header } from '../../components/Header';
 import { FooterInstitucional, FooterSocial } from '../../components/Footer';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons/faAngleUp';
+import ButtonTop from '../../components/ButtonTop';
 
 import './styles.css';
 import './script.jsx';
@@ -50,10 +48,6 @@ class SignIn extends Component {
             <div className="scrollBar">
                 <Header />
                 <main className="content">
-                    <button id="toTopButton" className="mr-4">
-                        <i className="fas fa-angle-up"></i>
-                        <FontAwesomeIcon icon={faAngleUp} />
-                    </button>
                     <h1 className="page-header mt-5 mr-5 ml-5 mb-0">Login</h1>
                     <div className="mt-4 mb-4">
                         <form method="POST" onSubmit={this.handleSignIn}>
@@ -96,6 +90,7 @@ class SignIn extends Component {
                     </div>
                 </main>
                 <footer>
+                  <ButtonTop />
                     <FooterInstitucional />
                     <FooterSocial />
                 </footer>

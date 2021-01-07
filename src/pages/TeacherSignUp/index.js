@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import api from '../../services/api';
-import $ from 'jquery';
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
+import api from '../../services/api'
+import $ from 'jquery'
 
-import { Header } from '../../components/Header';
-import { FooterInstitucional, FooterSocial } from '../../components/Footer';
+import { Header } from '../../components/Header'
+import { FooterInstitucional, FooterSocial } from '../../components/Footer'
+import ButtonTop from '../../components/ButtonTop'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons/faAngleUp';
-import { showError } from '../SignIn/script';
+import { showError } from '../SignIn/script'
 
-
-import '../StudentSignUp/styles.css';
-import '../StudentSignUp/script';
-import '../StudentSignUp/validate.js';
-import './styles.css';
+import '../StudentSignUp/styles.css'
+import '../StudentSignUp/script'
+import '../StudentSignUp/validate.js'
+import './styles.css'
 
 class TeacherSignUp extends Component {
   constructor() {
@@ -41,26 +39,26 @@ class TeacherSignUp extends Component {
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-    this.setState({ city: $("#city").val() });
-    this.setState({ address: $("#address").val() });
-    this.setState({ neighborhood: $("#neighborhood").val() });
-    this.setState({ state: $("#state").val() });
-  };
+    this.setState({ [e.target.name]: e.target.value })
+    this.setState({ city: $('#city').val() })
+    this.setState({ address: $('#address').val() })
+    this.setState({ neighborhood: $('#neighborhood').val() })
+    this.setState({ state: $('#state').val() })
+  }
 
   handleFileChange = e => {
-    this.setState({ selectedFile: e.target.files[0] });
+    this.setState({ selectedFile: e.target.files[0] })
   }
 
   handleSubmit = async e => {
-    e.preventDefault();
-    console.log(this.state);
+    e.preventDefault()
+    console.log(this.state)
 
-    this.state.documentNumber = this.state.documentNumber.replace(/[^\d]+/g,'');
-    this.state.zip = this.state.zip.replace(/[^\d]+/g,'');
-    this.state.foneMobile = this.state.foneMobile.replace(/[^\d]+/g,'');
-    this.state.foneHome = this.state.foneHome.replace(/[^\d]+/g,'');
-    this.state.foneCompany = this.state.foneCompany.replace(/[^\d]+/g,'');
+    this.state.documentNumber = this.state.documentNumber.replace(/[^\d]+/g, '')
+    this.state.zip = this.state.zip.replace(/[^\d]+/g, '')
+    this.state.foneMobile = this.state.foneMobile.replace(/[^\d]+/g, '')
+    this.state.foneHome = this.state.foneHome.replace(/[^\d]+/g, '')
+    this.state.foneCompany = this.state.foneCompany.replace(/[^\d]+/g, '')
 
     const data = new FormData()
     data.append('firstName', this.state.firstName)
@@ -81,66 +79,141 @@ class TeacherSignUp extends Component {
     data.append('email', this.state.email)
     data.append('password', this.state.password)
 
-    if ($("#foneCompany").val() === '') {
-      this.state.foneCompany = null;
+    if ($('#foneCompany').val() === '') {
+      this.state.foneCompany = null
     }
 
-    if ($("#foneHome").val() === '') {
-      this.state.foneHome = null;
+    if ($('#foneHome').val() === '') {
+      this.state.foneHome = null
     }
 
-    await api.post('/teacher', data)
-    .then(res => {
-        console.log(res);
-        console.log(res.data);
-        console.log(data);
-        this.props.history.push("/auth/loginTeacher");
+    await api
+      .post('/teacher', data)
+      .then(res => {
+        console.log(res)
+        console.log(res.data)
+        console.log(data)
+        this.props.history.push('/auth/loginTeacher')
       })
       .catch(error => {
-        showError("Falha ao tentar cadastrar")
-        console.log(error);
+        showError('Falha ao tentar cadastrar')
+        console.log(error)
       })
   }
 
   render() {
-    const { firstName, lastName, documentNumber, birthday, zip, state, city, address, number, addressDetails, neighborhood, foneMobile, foneHome, foneCompany, email, password } = this.state
+    const {
+      firstName,
+      lastName,
+      documentNumber,
+      birthday,
+      zip,
+      state,
+      city,
+      address,
+      number,
+      addressDetails,
+      neighborhood,
+      foneMobile,
+      foneHome,
+      foneCompany,
+      email,
+      password
+    } = this.state
     return (
       <div className="scrollBar">
         <Header />
         <main className="content">
-          <button id="toTopButton" className="mr-4">
-            <i className="fas fa-angle-up"></i>
-            <FontAwesomeIcon icon={faAngleUp} />
-          </button>
-          <h1 className="page-header mt-5 ml-4 mr-5">Cadastro de Professores</h1>
+          <h1 className="page-header mt-5 ml-4 mr-5">
+            Cadastro de Professores
+          </h1>
           <div className="mb-2 mt-1">
-            <form encType="multipart/form-data" method="POST" id="formRegister" onSubmit={this.handleSubmit}>
+            <form
+              encType="multipart/form-data"
+              method="POST"
+              id="formRegister"
+              onSubmit={this.handleSubmit}
+            >
               <fieldset>
                 <div className="mt-2 ml-4 mr-4 mb-4">
                   <div className="block p-3">
                     <h5>Dados Pessoais</h5>
                     <div className="form-row">
                       <div className="form-group col-12 col-md-6">
-                        <label htmlFor="firstName" className="required">Nome</label>
-                        <input type="text" className="form-control" id="firstName" name="firstName" value={firstName} onChange={this.handleChange} minLength={2} required />
+                        <label htmlFor="firstName" className="required">
+                          Nome
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="firstName"
+                          name="firstName"
+                          value={firstName}
+                          onChange={this.handleChange}
+                          minLength={2}
+                          required
+                        />
                       </div>
                       <div className="form-group col-12 col-md-6">
-                        <label htmlFor="lastName" className="required">Sobrenome</label>
-                        <input type="text" className="form-control" id="lastName" name="lastName" value={lastName} onChange={this.handleChange} minLength={2} required />
+                        <label htmlFor="lastName" className="required">
+                          Sobrenome
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="lastName"
+                          name="lastName"
+                          value={lastName}
+                          onChange={this.handleChange}
+                          minLength={2}
+                          required
+                        />
                       </div>
 
                       <div className="form-group col-12 col-md-4">
-                        <label htmlFor="documentNumber" className="required">CPF</label>
-                        <input type="text" className="form-control" id="documentNumber" name="documentNumber" value={documentNumber} onChange={this.handleChange} placeholder="Apenas números" maxLength={11} required />
+                        <label htmlFor="documentNumber" className="required">
+                          CPF
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="documentNumber"
+                          name="documentNumber"
+                          value={documentNumber}
+                          onChange={this.handleChange}
+                          placeholder="Apenas números"
+                          maxLength={11}
+                          required
+                        />
                       </div>
 
                       <div className="form-group col-12 col-md-3">
-                        <label htmlFor="birthday" className="required">Data de Nascimento</label>
-                        <input type="date" className="form-control" id="birthday" name="birthday" value={birthday} onChange={this.handleChange} required />
+                        <label htmlFor="birthday" className="required">
+                          Data de Nascimento
+                        </label>
+                        <input
+                          type="date"
+                          className="form-control"
+                          id="birthday"
+                          name="birthday"
+                          value={birthday}
+                          onChange={this.handleChange}
+                          required
+                        />
                       </div>
                       <div className="form-group col-12 col-md-5">
-                        <label htmlFor="file" className="required">Diploma</label>
-                        <input type="file" className="form-control-file" id="file" name="file" onChange={this.handleFileChange} maxLength={45} required />
+                        <label htmlFor="file" className="required">
+                          Diploma
+                        </label>
+                        <input
+                          type="file"
+                          className="form-control-file"
+                          id="file"
+                          name="file"
+                          onChange={this.handleFileChange}
+                          maxLength={45}
+                          required
+                        />
                       </div>
                     </div>
                   </div>
@@ -149,13 +222,33 @@ class TeacherSignUp extends Component {
                     <h5>Endereço</h5>
                     <div className="form-row">
                       <div className="form-group col-md-2">
-                        <label htmlFor="zip" className="required">CEP</label>
-                        <input type="text" className="form-control" id="zip" maxLength={8} name="zip" value={zip} onChange={this.handleChange} required />
+                        <label htmlFor="zip" className="required">
+                          CEP
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="zip"
+                          maxLength={8}
+                          name="zip"
+                          value={zip}
+                          onChange={this.handleChange}
+                          required
+                        />
                       </div>
 
                       <div className="form-group col-md-4">
-                        <label htmlFor="state" className="required">Estado</label>
-                        <select name="state" id="state" className="form-control" value={state} onChange={this.handleChange} required>
+                        <label htmlFor="state" className="required">
+                          Estado
+                        </label>
+                        <select
+                          name="state"
+                          id="state"
+                          className="form-control"
+                          value={state}
+                          onChange={this.handleChange}
+                          required
+                        >
                           <option>Selecione</option>
                           <option value="AC">Acre</option>
                           <option value="AL">Alagoas</option>
@@ -188,29 +281,79 @@ class TeacherSignUp extends Component {
                       </div>
 
                       <div className="form-group col-md-6">
-                        <label htmlFor="city" className="required">Cidade</label>
-                        <input type="text" id="city" className="form-control" name="city" value={city} onChange={this.handleChange} required />
+                        <label htmlFor="city" className="required">
+                          Cidade
+                        </label>
+                        <input
+                          type="text"
+                          id="city"
+                          className="form-control"
+                          name="city"
+                          value={city}
+                          onChange={this.handleChange}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="form-row">
                       <div className="form-group col-md-5">
-                        <label htmlFor="address" className="required">Rua</label>
-                        <input type="text" className="form-control" id="address" name="address" value={address} onChange={this.handleChange} placeholder="Ex.: Avenida Paulista" required />
+                        <label htmlFor="address" className="required">
+                          Rua
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="address"
+                          name="address"
+                          value={address}
+                          onChange={this.handleChange}
+                          placeholder="Ex.: Avenida Paulista"
+                          required
+                        />
                       </div>
 
                       <div className="form-group col-md-1">
-                        <label htmlFor="number" className="required">Número</label>
-                        <input type="number" className="form-control" id="number" name="number" value={number} onChange={this.handleChange} maxLength={5} required />
+                        <label htmlFor="number" className="required">
+                          Número
+                        </label>
+                        <input
+                          type="number"
+                          className="form-control"
+                          id="number"
+                          name="number"
+                          value={number}
+                          onChange={this.handleChange}
+                          maxLength={5}
+                          required
+                        />
                       </div>
 
                       <div className="form-group col-md-3">
                         <label htmlFor="addressDetails">Complemento</label>
-                        <input type="text" className="form-control" id="addressDetails" name="addressDetails" value={addressDetails} onChange={this.handleChange} placeholder="Casa, Apartamento, Bloco..." />
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="addressDetails"
+                          name="addressDetails"
+                          value={addressDetails}
+                          onChange={this.handleChange}
+                          placeholder="Casa, Apartamento, Bloco..."
+                        />
                       </div>
 
                       <div className="form-group col-md-3">
-                        <label htmlFor="neighborhood" className="required">Bairro</label>
-                        <input type="text" className="form-control" id="neighborhood" name="neighborhood" value={neighborhood} onChange={this.handleChange} required />
+                        <label htmlFor="neighborhood" className="required">
+                          Bairro
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="neighborhood"
+                          name="neighborhood"
+                          value={neighborhood}
+                          onChange={this.handleChange}
+                          required
+                        />
                       </div>
                     </div>
                   </div>
@@ -219,18 +362,47 @@ class TeacherSignUp extends Component {
                     <h5>Telefone</h5>
                     <div className="form-row">
                       <div className="form-group col-md-4">
-                        <label htmlFor="foneHome" className="required">Celular</label>
-                        <input type="text" className="form-control" id="foneMobile" name="foneMobile" value={foneMobile} onChange={this.handleChange} placeholder="Celular com DDD" required />
+                        <label htmlFor="foneHome" className="required">
+                          Celular
+                        </label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="foneMobile"
+                          name="foneMobile"
+                          value={foneMobile}
+                          onChange={this.handleChange}
+                          placeholder="Celular com DDD"
+                          required
+                        />
                       </div>
 
                       <div className="form-group col-md-4">
                         <label htmlFor="foneHome">Residencial</label>
-                        <input type="text" className="form-control" id="foneHome" name="foneHome" value={foneHome} onChange={this.handleChange} maxLength={11} placeholder="Telefone com DDD" />
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="foneHome"
+                          name="foneHome"
+                          value={foneHome}
+                          onChange={this.handleChange}
+                          maxLength={11}
+                          placeholder="Telefone com DDD"
+                        />
                       </div>
 
                       <div className="form-group col-md-4">
                         <label htmlFor="foneCompany">Comercial</label>
-                        <input type="text" className="form-control" id="foneCompany" name="foneCompany" value={foneCompany} onChange={this.handleChange} maxLength={11} placeholder="Telefone com DDD" />
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="foneCompany"
+                          name="foneCompany"
+                          value={foneCompany}
+                          onChange={this.handleChange}
+                          maxLength={11}
+                          placeholder="Telefone com DDD"
+                        />
                       </div>
                     </div>
                   </div>
@@ -238,29 +410,74 @@ class TeacherSignUp extends Component {
                     <h5>Login</h5>
                     <div className="form-row">
                       <div className="form-group col-md-6">
-                        <label htmlFor="email" className="required">Email</label>
-                        <input type="email" className="form-control" id="email" name="email" value={email} onChange={this.handleChange} placeholder="Email que será utilizado para login" required />
+                        <label htmlFor="email" className="required">
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="email"
+                          name="email"
+                          value={email}
+                          onChange={this.handleChange}
+                          placeholder="Email que será utilizado para login"
+                          required
+                        />
                       </div>
                       <div className="form-group col-md-3">
-                        <label htmlFor="password" className="required">Senha</label>
-                        <input type="password" className="form-control" id="password" name="password" value={password} onChange={this.handleChange} placeholder="Utilize uma senha forte" minLength={6} maxLength={15} required />
+                        <label htmlFor="password" className="required">
+                          Senha
+                        </label>
+                        <input
+                          type="password"
+                          className="form-control"
+                          id="password"
+                          name="password"
+                          value={password}
+                          onChange={this.handleChange}
+                          placeholder="Utilize uma senha forte"
+                          minLength={6}
+                          maxLength={15}
+                          required
+                        />
                       </div>
                       <div className="form-group col-md-3">
-                        <label htmlFor="password_confirm" className="required">Confirmar Senha</label>
-                        <input type="password" className="form-control" id="password_confirm" name="password_confirm" placeholder="Digite a senha novamente" minLength={6} maxLength={15} required />
+                        <label htmlFor="password_confirm" className="required">
+                          Confirmar Senha
+                        </label>
+                        <input
+                          type="password"
+                          className="form-control"
+                          id="password_confirm"
+                          name="password_confirm"
+                          placeholder="Digite a senha novamente"
+                          minLength={6}
+                          maxLength={15}
+                          required
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
-                <h6 className="legend">Campos <span style={{ color: 'red' }}>*</span> são obrigatórios</h6>
+                <h6 className="legend">
+                  Campos <span style={{ color: 'red' }}>*</span> são
+                  obrigatórios
+                </h6>
                 <div className="form-group mt-2 text-center m-4 mt-4">
-                  <button type="submit" className="btn btn-block btn-primary" id="btn-cadastrar">Cadastrar</button>
+                  <button
+                    type="submit"
+                    className="btn btn-block btn-primary"
+                    id="btn-cadastrar"
+                  >
+                    Cadastrar
+                  </button>
                 </div>
               </fieldset>
             </form>
           </div>
         </main>
         <footer>
+          <ButtonTop />
           <FooterInstitucional />
           <FooterSocial />
         </footer>
@@ -269,4 +486,4 @@ class TeacherSignUp extends Component {
   }
 }
 
-export default withRouter(TeacherSignUp);
+export default withRouter(TeacherSignUp)

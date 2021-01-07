@@ -18,13 +18,13 @@ const images = [
   {
     name: 'Login',
     url: require('../../assets/images/icons/user-regular.svg'),
-    location: 'auth/login',
+    location: 'auth/login'
   },
   {
     name: 'Carrinho',
     url: require('../../assets/images/icons/shopping-cart-solid.svg'),
-    location: 'Carrinho',
-  },
+    location: 'cart'
+  }
 ]
 
 const Header = () => {
@@ -60,7 +60,7 @@ const Header = () => {
                   <li key={index} className={item.cName}>
                     <Link to={item.path}>
                       {item.icon}
-                      <span>{item.title}</span>
+                      <span className={item.cSpanName}>{item.title}</span>
                     </Link>
                   </li>
                 )
@@ -165,19 +165,19 @@ const imagesLogin = [
   {
     name: 'Login',
     url: require('../../assets/images/icons/user-regular.svg'),
-    location: 'myprofile',
+    location: 'myprofile'
   },
   {
     name: 'Carrinho',
     url: require('../../assets/images/icons/shopping-cart-solid.svg'),
-    location: 'Carrinho',
+    location: 'Carrinho'
   },
   {
     name: 'Sair',
     url: require('../../assets/images/icons/sign-out-alt-solid.svg'),
     location: '',
-    click: logout,
-  },
+    click: logout
+  }
 ]
 
 const HeaderLogin = () => {

@@ -1,21 +1,21 @@
-import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import React from 'react'
+import { Link, withRouter } from 'react-router-dom'
 
-import { Header } from "../../components/Header";
-import { FooterInstitucional, FooterSocial } from "../../components/Footer";
-import ButtonTop from "../../components/ButtonTop";
-import Carousel from "../../components/SliderCarousel";
+import { Header } from '../../components/Header'
+import { FooterInstitucional, FooterSocial } from '../../components/Footer'
+import ButtonTop from '../../components/ButtonTop'
+import Carousel from '../../components/SliderCarousel'
 
-import studyIcon from "../../assets/images/icons/study.svg";
-import giveClassesIcon from "../../assets/images/icons/give-classes.svg";
-import logoMoney from "../../assets/images/icons/icon-service-01.svg";
-import logoPDF from "../../assets/images/icons/icon-service-02.svg";
-import logoQuestion from "../../assets/images/icons/icon-service-03.svg";
+import studyIcon from '../../assets/images/icons/study.svg'
+import giveClassesIcon from '../../assets/images/icons/give-classes.svg'
+import logoMoney from '../../assets/images/icons/icon-service-01.svg'
+import logoPDF from '../../assets/images/icons/icon-service-02.svg'
+import logoQuestion from '../../assets/images/icons/icon-service-03.svg'
 
-import { CoursesData } from "./CoursesData";
+import { CoursesData } from './CoursesData'
 
-import "./Landing.css";
-import "./script.js";
+import './Landing.css'
+import './script.js'
 
 const PageLanding = () => {
   return (
@@ -48,7 +48,7 @@ const PageLanding = () => {
                         <img src={item.icon} alt={item.title} />
                         <p className={item.pCName}>{item.title}</p>
                       </div>
-                    );
+                    )
                   })}
                 </div>
               </div>
@@ -169,7 +169,7 @@ const PageLanding = () => {
       <FooterInstitucional />
       <FooterSocial />
     </div>
-  );
-};
+  )
+}
 
-export default withRouter(PageLanding);
+export default withRouter(PageLanding)
