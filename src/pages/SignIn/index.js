@@ -45,7 +45,7 @@ class SignIn extends Component {
 
     render() {
         return (
-            <div className="scrollBar">
+            <div className="body-container">
                 <Header />
                 <main className="content">
                     <h1 className="page-header mt-5 mr-5 ml-5 mb-0">Login</h1>

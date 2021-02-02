@@ -36,16 +36,6 @@ class StudentSignUp extends Component {
     }
   }
 
-  componentDidMount() {
-    $(() => {
-      let height = $('.navbar-wrapper').outerHeight()
-      $('<div>', {
-        class: 'nav-wrapper',
-        style: `margin-top:` + height + 'px'
-      }).insertAfter('.navbar-wrapper')
-    });
-  }
-
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
     this.setState({ city: $('#city').val() })

@@ -35,7 +35,9 @@ export function showError(text) {
     allowOutsideClick: false,
     icon: 'error',
     confirmButtonText: 'OK'
-  });
+  }).then(() => {
+    document.getElementById("address.neighborhood").focus();
+  })
 }
 
 export function loginSucess(text) {

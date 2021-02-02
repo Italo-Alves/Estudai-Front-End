@@ -19,7 +19,7 @@ import './script.js'
 
 const PageLanding = () => {
   return (
-    <div className="scrollBar">
+    <div className="body-container">
       <Header />
       <Carousel />
       <main className="content mt-0">

@@ -121,7 +121,7 @@ class TeacherSignUp extends Component {
       password
     } = this.state
     return (
-      <div className="scrollBar">
+      <div className="body-container">
         <Header />
         <main className="content">
           <h1 className="page-header mt-5 ml-4 mr-5">

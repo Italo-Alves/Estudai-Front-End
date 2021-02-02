@@ -18,11 +18,5 @@ $(document).ready(function () {
     $(this).removeClass('open');
   });
 
-  $(() => {
-    let height = $('.navbar-wrapper').outerHeight()
-    $('<div>', {
-      class: 'nav-wrapper',
-      style: `margin-top:` + height + 'px'
-    }).insertAfter('.navbar-wrapper')
-  });
+
 });
