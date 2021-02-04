@@ -148,8 +148,8 @@ const FormSignUp: React.FC = () => {
             className="select"
             label="Estado"
           />
-          <Input name="city" className="form-control" label="Cidade" />
-          <Input name="street" className="form-control" label="Rua" />
+          <Input name="city" mask="" className="form-control" label="Cidade" />
+          <Input name="street" mask="" className="form-control" label="Rua" />
           <Input
             name="number"
             mask="9999"
