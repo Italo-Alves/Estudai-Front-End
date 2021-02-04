@@ -33,7 +33,6 @@ const Input: React.FC<Props> = ({ name, label, ...rest }) => {
         id={fieldName}
         ref={inputRef}
         defaultValue={defaultValue}
-        mask=""
         {...rest}
       />
 

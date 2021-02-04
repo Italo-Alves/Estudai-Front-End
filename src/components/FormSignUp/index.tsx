@@ -157,8 +157,18 @@ const FormSignUp: React.FC = () => {
             className="form-control"
             label="Número"
           />
-          <Input name="neighborhood" className="form-control" label="Bairro" />
-          <Input name="details" className="form-control" label="Complemento" />
+          <Input
+            name="neighborhood"
+            mask=""
+            className="form-control"
+            label="Bairro"
+          />
+          <Input
+            name="details"
+            mask=""
+            className="form-control"
+            label="Complemento"
+          />
         </Scope>
 
         <Input
