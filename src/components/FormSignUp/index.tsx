@@ -176,7 +176,7 @@ const FormSignUp: React.FC = () => {
           type="email"
           name="email"
           label="Email"
-          alwaysShowMask
+          mask=""
         />
         <Input
           type="password"
