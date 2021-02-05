@@ -2,7 +2,7 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
-  "author": "Italo Alves",
+  "license": "MIT",
   "repository": "https://github.com/Italo-Alves/Estudai-Front-End",
   "dependencies": {
     "@popperjs/core": "^2.4.4",
