@@ -1,11 +1,11 @@
 <h1 align="center">
-  <img alt="dev.finances" title="dev.finances" src=".github/logoEstudai.svg" width="220px" />
+  <img alt="Estudai" title="Estudai" src=".github/logoEstudai.svg" width="220px" />
 </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -17,9 +17,9 @@
 
 <br>
 
-<p align="center">
-  <img alt="dev.finances" src=".github/devfinances.png" width="100%">
-</p>
+<!-- <p align="center">
+  <img alt="Estudai" src=".github/devfinances.png" width="100%">
+</p> -->
 
 ## 🚀 Tecnologias
 
@@ -27,15 +27,31 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
+- React
+- TypeScript
 - JavaScript
 
 ## 💻 Projeto
 
-O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰
+O Estudai é uma plataforma de estudos, onde é possível cadastrar alunos e professores. :blue_book:
 
-## 🔖 Layout
+## :octocat: Instalação
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Para clonar o repositório
+
+> `git clone https://github.com/Italo-Alves/Estudai-Front-End.git`
+
+Para instalar as dependencias com Yarn
+
+> `yarn | yarn install`
+
+Para instalar as dependencias com NPM
+
+> `npm install | npm i`
+
+Iniciar o ambiente de desenvolvimento
+
+> `yarn start`
 
 ## :memo: Licença
 
@@ -43,4 +59,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com ♥ by Italo Alves :wave:
