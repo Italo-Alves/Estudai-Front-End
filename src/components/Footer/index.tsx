@@ -1,18 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React from 'react'
 
-import logoFacebook from "../../assets/images/icons/facebook-logo.svg";
-import logoTwitter from "../../assets/images/icons/twitter-logo.svg";
-import logoInstagram from "../../assets/images/icons/instagram-logo.svg";
-import logoYoutube from "../../assets/images/icons/youtube-logo.svg";
+import logoFacebook from '../../assets/images/icons/facebook-logo.svg'
+import logoTwitter from '../../assets/images/icons/twitter-logo.svg'
+import logoInstagram from '../../assets/images/icons/instagram-logo.svg'
+import logoYoutube from '../../assets/images/icons/youtube-logo.svg'
 
-import "./styles.css";
-import "./FooterSocial.css";
+import './styles.css'
+import './FooterSocial.css'
 
 const FooterInstitucional = () => {
   return (
     <div className="footer-site">
-      <div className="content container mt-4 mb-4 mt-md-5 mb-md-5">
+      <div className="content container mt-4 mb-4 mt-md-5 mb-md-5 align-items-md-center text-sm-center text-md-left">
         <div className="row pr-0 pl-0 pr-md-3 pl-md-3">
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <h3 className="title titleFooter">Institucional</h3>
@@ -82,8 +82,8 @@ const FooterInstitucional = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 const FooterSocial = () => {
   return (
@@ -143,7 +143,7 @@ const FooterSocial = () => {
         </span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export { FooterInstitucional, FooterSocial };
+export { FooterInstitucional, FooterSocial }
