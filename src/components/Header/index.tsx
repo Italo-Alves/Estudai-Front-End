@@ -12,7 +12,6 @@ import { IconContext } from 'react-icons'
 
 import './styles.css'
 import './Sidebar.css'
-import './script.jsx'
 
 const images = [
   {
