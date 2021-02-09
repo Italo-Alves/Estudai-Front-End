@@ -131,7 +131,7 @@ body {
   margin-bottom: 20px;
   font-size: 19px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .salesforce label {
@@ -156,7 +156,7 @@ section.title {
 }
 
 .container-full .title {
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-size: 2.6rem !important;
   font-weight: 700;
 }
@@ -165,7 +165,7 @@ section.title {
   text-align: center;
   font-size: 1.5rem;
   line-height: 24px;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-weight: 700;
   word-wrap: break-word;
 }
@@ -188,14 +188,14 @@ section.section {
 .item .subtitle {
   color: #121212;
   font-weight: 700;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-size: 18px;
 }
 
 .section-why p {
   font-size: 14px;
   line-height: 22px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .banners {
@@ -212,4 +212,10 @@ section.section {
 
 .link-orange:hover {
   color: #969d69;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-why .item {
+    width: 100%;
+  }
 }
