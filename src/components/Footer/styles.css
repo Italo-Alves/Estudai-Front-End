@@ -1,55 +1,61 @@
-.footer-site{
-    background: var(--color-box-footer) !important;
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.footer-site {
+  background: var(--color-box-footer) !important;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width: 600px){
-    .footer-site{
-        text-align: center;
-    }
+.title {
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.6rem !important;
+  padding-bottom: 5px;
 }
 
-.title{
-    font-family: 'Archivo', sans-serif;
-    font-size: 1.6rem !important;
-    padding-bottom: 5px;
+.footer-site .column a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ffffff !important;
 }
 
-
-.footer-site .column a{
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #ffffff !important;
+.footer-site .column li {
+  padding: 5px 0;
 }
 
-.footer-site .column li{
-    padding: 5px 0;
+.titleFooter {
+  margin-bottom: 0.8rem;
+  font-weight: 700;
 }
 
-.titleFooter{
-    margin-bottom: .8rem;
+.address {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
-.address{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
+.footer-site .email {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-.footer-site .email{
-    font-size: 1.4rem;
-    font-weight: 700;
+.footer-site .email a {
+  text-decoration: none;
+  color: #ffffff !important;
 }
 
-.footer-site .email a{
-    text-decoration: none;
-    color: #ffffff !important;
+.footer-site .email a:hover {
+  text-decoration: underline;
 }
 
-.footer-site .email a:hover{
-    text-decoration: underline;
+@media only screen and (max-width: 600px) {
+  .footer-site {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-site .row {
+    width: 100%;
+  }
 }

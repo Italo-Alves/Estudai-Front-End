@@ -20,7 +20,9 @@ import './script.js'
 const PageLanding = () => {
   return (
     <div className="body-container">
-      <Header />
+      <header>
+        <Header />
+      </header>
       <Carousel />
       <main className="content mt-0">
         <div className="buttons-container">
@@ -166,8 +168,10 @@ const PageLanding = () => {
         </section>
       </main>
       <ButtonTop />
-      <FooterInstitucional />
-      <FooterSocial />
+      <footer>
+        <FooterInstitucional />
+        <FooterSocial />
+      </footer>
     </div>
   )
 }

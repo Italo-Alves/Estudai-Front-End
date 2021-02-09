@@ -71,7 +71,7 @@ const FooterInstitucional = () => {
               </p>
             </div>
             <p></p>
-            <h3 className="title">Email</h3>
+            <h3 className="title titleFooter">Email</h3>
             <span className="email">
               <a href="#" target="_blank">
                 exemplo123@hotmail.com
