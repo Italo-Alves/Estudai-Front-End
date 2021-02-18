@@ -1,11 +1,15 @@
 import React from 'react'
+
+import GlobalStyles from './assets/styles/GlobalStyles'
 import Routes from './routes'
 
-import './assets/styles/global.css'
-import './assets/styles/swal2alert.css'
-
 const App = () => {
-  return <Routes />
+  return (
+    <>
+      <GlobalStyles />
+      <Routes />
+    </>
+  )
 }
 
 export default App
