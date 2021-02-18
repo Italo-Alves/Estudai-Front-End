@@ -9,39 +9,30 @@ export const SidebarData = [
     title: 'Ínicio',
     path: '/',
     icon: <AiIcons.AiFillHome />,
-    cName: 'nav-text',
-    cSpanName: 'span-title'
+    liClass: 'active'
   },
 
   {
     title: 'Meus Cursos',
     path: '/courses',
-    icon: <GoIcons.GoMortarBoard />,
-    cName: 'nav-text',
-    cSpanName: 'span-title'
+    icon: <GoIcons.GoMortarBoard />
   },
 
   {
     title: 'Quem Somos',
     path: '/quem-somos',
-    icon: <IoIcons.IoMdPeople />,
-    cName: 'nav-text',
-    cSpanName: 'span-title'
+    icon: <IoIcons.IoMdPeople />
   },
 
   {
     title: 'Mensagens',
     path: '/mensagens',
-    icon: <FaIcons.FaEnvelopeOpen />,
-    cName: 'nav-text',
-    cSpanName: 'span-title'
+    icon: <FaIcons.FaEnvelopeOpen />
   },
 
   {
     title: 'Suporte',
     path: '/suporte',
-    icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text',
-    cSpanName: 'span-title'
+    icon: <IoIcons.IoMdHelpCircle />
   }
 ]
