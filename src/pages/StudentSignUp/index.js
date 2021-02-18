@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import api from '../../services/api'
-import $ from 'jquery'
 
-import { Header } from '../../components/Header'
-import { FooterInstitucional, FooterSocial } from '../../components/Footer'
+import Header from '../../components/Header'
+import FooterTop from '../../components/Footers/FooterTop'
+import FooterBack from '../../components/Footers/FooterBack'
 import ButtonTop from '../../components/ButtonTop'
 
 import { showError } from '../SignIn/script'
 
 import './styles.css'
-import './script.jsx'
-import './validate.js'
+// import './script.jsx'
+// import './validate.js'
+
+import { Container } from './styles'
 
 class StudentSignUp extends Component {
   constructor() {
@@ -38,10 +40,10 @@ class StudentSignUp extends Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
-    this.setState({ city: $('#city').val() })
-    this.setState({ address: $('#address').val() })
-    this.setState({ neighborhood: $('#neighborhood').val() })
-    this.setState({ state: $('#state').val() })
+    // this.setState({ city: $('#city').val() })
+    // this.setState({ address: $('#address').val() })
+    // this.setState({ neighborhood: $('#neighborhood').val() })
+    // this.setState({ state: $('#state').val() })
   }
 
   handleSubmit = async e => {
@@ -54,13 +56,13 @@ class StudentSignUp extends Component {
     this.state.foneHome = this.state.foneHome.replace(/[^\d]+/g, '')
     this.state.foneCompany = this.state.foneCompany.replace(/[^\d]+/g, '')
 
-    if ($('#foneCompany').val() === '') {
-      this.state.foneCompany = null
-    }
+    // if ($('#foneCompany').val() === '') {
+    //   this.state.foneCompany = null
+    // }
 
-    if ($('#foneHome').val() === '') {
-      this.state.foneHome = null
-    }
+    // if ($('#foneHome').val() === '') {
+    //   this.state.foneHome = null
+    // }
 
     await api
       .post('/student', this.state)
@@ -94,11 +96,12 @@ class StudentSignUp extends Component {
       password
     } = this.state
     return (
-      <div className="body-container">
+      <Container>
         <Header />
+        <div style={{ marginTop: '65px' }}></div>
         <div className='sidebar-wrapper'></div>
         <main className="content">
-          <h1 className="page-header mt-5 ml-4 mr-5">Cadastro de Alunos</h1>
+          <h1 className="page-header mt-4 ml-4 mr-5">Cadastro de Alunos</h1>
           <div className="mb-2 mt-1">
             <form method="POST" id="formRegister" onSubmit={this.handleSubmit}>
               <fieldset>
@@ -437,12 +440,12 @@ class StudentSignUp extends Component {
             </form>
           </div>
         </main>
+        <ButtonTop />
         <footer>
-          <ButtonTop />
-          <FooterInstitucional />
-          <FooterSocial />
+          <FooterTop />
+          <FooterBack />
         </footer>
-      </div>
+      </Container >
     )
   }
 }
