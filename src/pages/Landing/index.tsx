@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
-import { Header } from '../../components/Header'
-import { FooterInstitucional, FooterSocial } from '../../components/Footer'
+import Header from '../../components/Header'
+import FooterTop from '../../components/Footers/FooterTop'
+import FooterBack from '../../components/Footers/FooterBack'
 import ButtonTop from '../../components/ButtonTop'
 import Carousel from '../../components/SliderCarousel'
 
@@ -14,15 +15,15 @@ import logoQuestion from '../../assets/images/icons/icon-service-03.svg'
 
 import { CoursesData } from './CoursesData'
 
+import { Container } from './styles'
+
 import './Landing.css'
-import './script.js'
 
 const PageLanding = () => {
   return (
-    <div className="body-container">
-      <header>
-        <Header />
-      </header>
+    <Container>
+      <Header />
+      <div style={{ marginTop: '65px' }}></div>
       <Carousel />
       <main className="content mt-0">
         <div className="buttons-container">
@@ -169,10 +170,10 @@ const PageLanding = () => {
       </main>
       <ButtonTop />
       <footer>
-        <FooterInstitucional />
-        <FooterSocial />
+        <FooterTop />
+        <FooterBack />
       </footer>
-    </div>
+    </Container>
   )
 }
 

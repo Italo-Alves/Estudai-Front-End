@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@ body {
 
 body {
   overflow: hidden;
-}
+} */
 
 .buttons-container {
   display: flex;
